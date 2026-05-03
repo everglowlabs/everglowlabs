@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Everglow Labs | Architecting Trust, Security, and Scale</title>
+    <meta name="description" content="Everglow Labs, founded by Sammy Oina. Specializing in Confidential Computing, TEEs, Go Systems, and high-throughput SaaS." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#" style="display: flex; align-items: center; text-decoration: none;">
+          <img src="./logo_clean.png" alt="Everglow Labs" class="nav-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+          <span class="logo-text" style="display: none; font-family: var(--font-heading); font-size: 1.5rem; font-weight: 700; color: var(--text-primary); letter-spacing: -0.5px;">Everglow Labs</span>
+        </a>
+      </div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#opensource">Open Source</a>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">Architecting Trust,<br><span class="gradient-text">Security & Scale.</span></h1>
+        <p class="hero-subtitle">Everglow Labs builds production-grade SaaS, immutable infrastructure, and hardware-attested environments.</p>
+        <div class="hero-cta">
+          <a href="#products" class="btn btn-primary">Explore Products</a>
+          <a href="#about" class="btn btn-secondary">Meet the Founder</a>
+        </div>
+      </div>
+      <div class="hero-graphics">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+      </div>
+    </header>
+
+    <!-- About Founder -->
+    <section id="about" class="section glass-section">
+      <div class="container">
+        <h2 class="section-title">Led by Expertise</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <div class="profile-header" style="display: flex; align-items: center; gap: 1.5rem; margin-bottom: 1.5rem;">
+              <img src="https://media.licdn.com/dms/image/v2/D4D03AQGlZFE-fiOZIg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1692956610177?e=1779321600&v=beta&t=zncghqE60Yr1Nj2FIm-teZRXvqWURn_vTiye2_e8r3M" alt="Sammy Kerata Oina" style="width: 90px; height: 90px; border-radius: 50%; object-fit: cover; border: 3px solid var(--card-border); box-shadow: 0 0 20px rgba(0, 240, 255, 0.2);">
+              <div>
+                <h3 style="margin-bottom: 0.2rem;">Sammy Kerata Oina</h3>
+                <p class="lead" style="margin-bottom: 0;">Technical Lead & Systems Engineer</p>
+              </div>
+            </div>
+            <p>Specializing in <strong>Confidential Computing</strong> and high-throughput Go systems. I architect Trusted Execution Environments (TEEs) using AMD SEV-SNP and Intel TDX, focusing on reproducible Linux builds and secure AI workload orchestration.</p>
+            <p>With a proven track record in launching production-grade SaaS and open-source frameworks, Everglow Labs brings unparalleled engineering standards to every project.</p>
+            <div class="social-links">
+              <a href="https://github.com/sammyoina" target="_blank" rel="noopener noreferrer" class="social-icon" id="github-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+              </a>
+              <a href="https://www.linkedin.com/in/sammy-oina/" target="_blank" rel="noopener noreferrer" class="social-icon" id="linkedin-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="about-stats glass-card">
+            <div class="stat-item">
+              <span class="stat-value">Go</span>
+              <span class="stat-label">Expert</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">TEEs</span>
+              <span class="stat-label">AMD & Intel</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">Infra</span>
+              <span class="stat-label">Buildroot, NixOS</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">Sec</span>
+              <span class="stat-label">Immutable FS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section id="products" class="section">
+      <div class="container">
+        <h2 class="section-title">Flagship Product</h2>
+        <div class="product-showcase glass-card">
+          <div class="product-info">
+            <h3 class="product-name">VibeCV.app</h3>
+            <p class="product-desc">Enterprise SaaS platform built for AI-powered CV customization. Designed for scale with a microservice architecture, integrating robust billing, authentication, and secure document processing.</p>
+            <ul class="product-features">
+              <li>Open-source core with enterprise SaaS extensions</li>
+              <li>LLM integration (OpenAI, Anthropic, Gemini)</li>
+              <li>Secure LaTeX sanitization & PDF generation</li>
+              <li>High-availability Go microservices</li>
+            </ul>
+            <a href="https://vibecv.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary mt-4">Visit VibeCV</a>
+          </div>
+          <div class="product-visual">
+            <div class="abstract-ui">
+              <div class="ui-header"></div>
+              <div class="ui-body">
+                <div class="ui-line short"></div>
+                <div class="ui-line"></div>
+                <div class="ui-line"></div>
+                <div class="ui-box"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Expertise & Consulting -->
+    <section id="expertise" class="section glass-section">
+      <div class="container">
+        <h2 class="section-title">Consulting & Expertise</h2>
+        <div class="grid-3">
+          <div class="feature-card glass-card">
+            <div class="feature-icon" id="icon-shield"></div>
+            <h4>Confidential Computing</h4>
+            <p>Architecting Trusted Execution Environments (AMD SEV-SNP, Intel TDX) and remote attestation pipelines for highly sensitive workloads.</p>
+          </div>
+          <div class="feature-card glass-card">
+            <div class="feature-icon" id="icon-cpu"></div>
+            <h4>High-Throughput Systems</h4>
+            <p>Building extremely resilient Go proxy services and distributed systems capable of sustaining massive concurrent connections.</p>
+          </div>
+          <div class="feature-card glass-card">
+            <div class="feature-icon" id="icon-layers"></div>
+            <h4>Reproducible Infrastructure</h4>
+            <p>Crafting minimal, secure Linux distributions using Buildroot and implementing immutable root filesystems via dm-verity.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Open Source -->
+    <section id="opensource" class="section">
+      <div class="container">
+        <h2 class="section-title">Open Source & Community</h2>
+        <div class="grid-2">
+          <div class="os-card glass-card">
+            <h4><a href="https://github.com/ultravioletrs/cube" target="_blank" rel="noopener noreferrer">Cube AI</a></h4>
+            <p>An open-source framework for LLM deployment inside TEEs, handling end-to-end remote attestation and secure policy enforcement.</p>
+          </div>
+          <div class="os-card glass-card">
+            <h4><a href="https://github.com/ultravioletrs/cocos" target="_blank" rel="noopener noreferrer">cocos.ai</a></h4>
+            <p>Go-native orchestration engine for hardware-attested workloads. Proudly maintained under the Linux Foundation (CCC).</p>
+          </div>
+          <div class="os-card glass-card">
+            <h4><a href="https://github.com/absmach/magistrala" target="_blank" rel="noopener noreferrer">Magistrala</a></h4>
+            <p>Core contributor/maintainer for scalable and robust distributed IoT systems.</p>
+          </div>
+          <div class="os-card glass-card">
+            <h4><a href="https://www.meetup.com/roboke/" target="_blank" rel="noopener noreferrer">RoboKE Meetup</a></h4>
+            <p>Founder & Organizer of Kenya's premier robotics and hardware engineering community, fostering innovation in low-level systems.</p>
+          </div>
+          <div class="os-card glass-card">
+            <h4>Public Speaking</h4>
+            <p>Frequent speaker on distributed systems, confidential computing, and advocate for verifiable infrastructure.</p>
+            <ul style="list-style: none; margin-top: 1rem;">
+              <li style="margin-bottom: 0.5rem;"><a href="https://www.youtube.com/watch?v=v2tdBNLx6R0" target="_blank" rel="noopener noreferrer">▶️ How Go Compiles Itself (GopherCon Africa 2025)</a></li>
+              <li style="margin-bottom: 0.5rem;"><a href="https://youtu.be/NMOiKIkM06Y?si=OXoK_urpuZEizRwU" target="_blank" rel="noopener noreferrer">▶️ Power of Interfaces (GopherCon Africa 2024)</a></li>
+              <li style="margin-bottom: 0.5rem;"><a href="https://www.gophercon.africa/speakers?name=Sammy%20Kerata%20Oina" target="_blank" rel="noopener noreferrer">🎤 GopherCon Africa Profile</a></li>
+              <li><a href="https://sessionize.com/sammy-oina/" target="_blank" rel="noopener noreferrer">📅 Sessionize Profile</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer glass-section">
+      <div class="container footer-content">
+        <div class="footer-brand">
+          <h3>Everglow Labs</h3>
+          <p>Nairobi, Kenya</p>
+        </div>
+        <div class="footer-links" style="text-align: center;">
+          <p>&copy; 2026 Everglow Labs. All rights reserved.</p>
+          <div style="margin-top: 1rem;">
+            <a href="https://www.linkedin.com/company/everglowlabs" target="_blank" rel="noopener noreferrer" style="color: var(--text-secondary); text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; transition: color 0.3s;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+              Follow us on LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
