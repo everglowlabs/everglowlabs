@@ -132,6 +132,11 @@ a:hover {
   letter-spacing: -0.5px;
 }
 
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
 .nav-links a {
   color: var(--text-secondary);
   margin-left: 2rem;
@@ -452,13 +457,14 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    padding: 5rem 1.5rem 3rem;
-    min-height: calc(100vh - 5rem);
+    padding: 6rem 1.5rem 3rem;
+    min-height: calc(100vh - 6rem);
   }
   
   .hero-content {
     width: 100%;
     max-width: 100%;
+    z-index: 3;
   }
 
   .hero-title {
