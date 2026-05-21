@@ -47,10 +47,38 @@ document.addEventListener('DOMContentLoaded', () => {
     observer.observe(section);
   });
 
+  // Hamburger menu
+  const navToggle = document.getElementById('nav-toggle');
+  const navLinks = document.getElementById('nav-links');
+
+  if (navToggle && navLinks) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      navToggle.classList.toggle('open', isOpen);
+      navToggle.setAttribute('aria-expanded', String(isOpen));
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    });
+
+    // Close menu on outside click
+    document.addEventListener('click', (e) => {
+      if (!navToggle.contains(e.target) && !navLinks.contains(e.target)) {
+        navLinks.classList.remove('open');
+        navToggle.classList.remove('open');
+        navToggle.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      }
+    });
+  }
+
   // Smooth scrolling for anchor links
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
+      // Close mobile menu if open
+      if (navLinks) navLinks.classList.remove('open');
+      if (navToggle) navToggle.classList.remove('open');
+      if (navToggle) navToggle.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
       const target = document.querySelector(this.getAttribute('href'));
       if (target) {
         target.scrollIntoView({
